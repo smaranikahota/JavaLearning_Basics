@@ -1,0 +1,43 @@
+
+class Employee_ {
+	int yearOfJoining;
+	String name;
+	float sal;
+	String address;
+
+}
+
+class Main {
+	public static void main(String args[]) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter How many employee:");
+		int k = sc.nextInt();
+
+		Employee_ emp[] = new Employee_[k];
+
+		for (int i = 0; i < k; i++) {
+			emp[i] = new Employee_();
+
+			System.out.println("Enter " + (i + 1) + " Employee data :");
+
+			System.out.print("Enter employee year Of Joining :");
+			emp[i].yearOfJoining = sc.nextInt();
+			System.out.print("Enter employee name :");
+			emp[i].name = sc.next();
+			System.out.print("Enter employee salary :");
+			emp[i].sal = sc.nextFloat();
+			System.out.println("Enter the Address of employee :");
+			emp[i].address=sc.nextLine();
+
+		}
+
+		System.out.println("============ All employee details are :============");
+
+		for (int i = 0; i < k; i++) {
+			System.out.println("Employee year Of Joining, name, salary and address is  :" + emp[i].yearOfJoining + " " + emp[i].name + " " + emp[i].sal+"  "+emp[i].address);
+
+		}
+	}
+
+}
