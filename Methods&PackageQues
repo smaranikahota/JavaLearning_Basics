@@ -1,0 +1,18 @@
+import java.util.*;
+public class Methods&PackageQues{
+public static void main (String[] args){
+Scanner s=new Scanner(System.in);
+int mins;
+		mins=s.nextInt();
+		int year,days;
+		int cn=60*24*365;
+		year=mins/cn;
+		System.out.print(year+" years ");
+		mins=mins-(year*cn);
+		int cm=60*24;
+		days=mins/cm;
+		System.out.print("and "+days+" days.");
+	}
+}
+//input 124875
+//0 years and 86 days.
