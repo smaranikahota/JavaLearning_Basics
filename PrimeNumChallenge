@@ -1,0 +1,22 @@
+//check if any given input number is prime or not.
+import java.util.*;
+class PrimeNumChallenge{
+public static void main (String []args){
+Scanner sc=new Scanner(System.in);
+System.out.println("Please insert any number");
+int num=sc.nextInt();
+for(int i=2;i<num;i++){
+     if(num%i==0)         {
+     System.out.println("The num "+num+" is not prime");
+     break;
+                           }
+    
+    else {
+     System.out.println(num+ " is Prime number .");
+                }
+     
+
+}
+}
+}
+
